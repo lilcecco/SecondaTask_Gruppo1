@@ -7,10 +7,15 @@ module.exports = {
     extend: {
       colors: {
         'brown' : '#222221',
+        'secondary-brown': '#1E1E1E',
         'green': '#00A09A',
         'gray': '#ABB2BF'
       }
     },
+    fontFamily: {
+      'poppins': ['Poppins', 'sans-serif'],
+      'fira-code': ['Fira Code', 'monospace'],
+    }
   },
   plugins: [],
 }
