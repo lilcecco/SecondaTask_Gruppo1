@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'primary' : '#222221',
         'secondary': '#00A09A',
+        'textBoxGrey': '#323232',
       }
     },
   },
