@@ -33,17 +33,20 @@ const Home = () => {
       </header>
 
       <div className="flex justify-between px-20 py-24">
-        <div className="w-2/4">
-          <h1 className="font-poppins font-medium mt-20">
+        <div className="w-2/4 flex flex-col justify-between">
+          <div className="mt-20">
+            <h1 className="font-poppins font-medium">
             <span className="text-white ">Sono uno </span>
             <span className="text-green">sviluppatore<br /> full-stack</span>
           </h1>
-          <p className="font-poppins text-gray mt-8">He crafts responsive websites where<br /> technologies meet creativity</p>
-          <div className="absolute border border-green rounded-lg text-white py-2 px-4 mt-10">Contattami</div>
-          <div className="flex gap-2 mt-60">
-            <img src="/img/Github.svg" alt="" />
-            <img src="/img/Figma.svg" alt="" />
-            <img src="/img/Linkedin.svg" alt="" />
+            <p className="font-poppins text-gray mt-8">He crafts responsive websites where<br /> technologies meet creativity</p>
+            <div className="absolute border border-green rounded-lg text-white py-1.5 px-4 mt-10 hover:bg-green hover:text-white transition duration-300">Contattami</div></div>
+          <div>
+            <div className="flex gap-2">
+              <img src="/img/Github.svg" alt="" />
+              <img src="/img/Figma.svg" alt="" />
+              <img src="/img/Linkedin.svg" alt="" />
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center w-2/4">
@@ -61,7 +64,8 @@ const Home = () => {
         <span className="text-white text-3xl font-medium">contatti</span>
         <span className="border-b border-green ml-4 w-2/4" ></span>
       </div>
-      <div className="flex px-20 py-10 items-center justify-between">
+      <div className="relative flex px-20 py-10 items-center justify-between">
+        <img src="/img/details-1.png" alt="" className="absolute top-1 left-0" />
         <div className="w-2/4">
           <img src="/img/hero.gif" alt="" className="w-full" />
         </div>
@@ -74,10 +78,32 @@ const Home = () => {
             </div>
             <input type="text" name="" id="" placeholder="Oggetto" />
             <textarea name="" id="" rows="8" placeholder="Testo"></textarea>
-            <button className="text-white border border-green rounded-lg py-1 w-28">Invia</button>
+            <button className="text-white border border-green rounded-lg py-1 w-28 hover:bg-green hover:text-white transition duration-300">Invia</button>
           </form>
         </div>
       </div>
+
+      <footer className="border-t border-gray px-20 py-8">
+        <div className="flex justify-between">
+          <div className="flex items-center gap-12">
+            <div className="flex gap-2">
+              <img src="/img/favicon-jetop-01.svg" alt="" />
+              <span className="text-white text-2xl font-bold">Elias</span>
+            </div>
+            <div className="text-gray">elias@elias.ml</div>
+          </div>
+          <div className="text-white text-2xl font-medium">Social</div>
+        </div>
+        <div className="flex justify-between mt-4">
+          <div className="text-white">Sviluppatore frontend</div>
+          <div className="flex gap-2">
+            <img src="/img/Github.svg" alt="" />
+            <img src="/img/Figma.svg" alt="" />
+            <img src="/img/Linkedin.svg" alt="" />
+          </div>
+        </div>
+        <div className="text-center text-gray mt-10">Designed with &#x2764; by JEToP</div>
+      </footer>
     </div>
   )
 }
