@@ -6,15 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-<<<<<<< HEAD
         'primary' : '#222221',
         'secondary': '#00A09A',
+
         'textBoxGrey': '#323232',
-=======
-        'brown' : '#222221',
+       'brown' : '#222221',
         'green': '#00A09A',
         'gray': '#ABB2BF'
->>>>>>> main
       }
     },
   },
