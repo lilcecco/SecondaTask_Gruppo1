@@ -16,6 +16,7 @@ h1 {
 input,
 textarea {
   background-color: #222221;
+  outline: none;
   border: 2px solid #00A09A;
   border-radius: 10px;
   padding: 12px;

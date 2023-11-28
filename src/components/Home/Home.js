@@ -32,7 +32,7 @@ const Home = () => {
         </nav>
       </header>
 
-      <div className="flex justify-between px-20 py-24">
+      <div className="flex justify-between p-20">
         <div className="w-2/4 flex flex-col justify-between">
           <div className="mt-20">
             <h1 className="font-poppins font-medium">
@@ -40,7 +40,7 @@ const Home = () => {
             <span className="text-green">sviluppatore<br /> full-stack</span>
           </h1>
             <p className="font-poppins text-gray mt-8">He crafts responsive websites where<br /> technologies meet creativity</p>
-            <div className="absolute border border-green rounded-lg text-white py-1.5 px-4 mt-10 hover:bg-green hover:text-white transition duration-300">Contattami</div></div>
+            <div className="absolute border border-green rounded-lg text-white py-1.5 px-4 mt-10 hover:bg-green hover:text-white transition duration-300 cursor-pointer">Contattami</div></div>
           <div>
             <div className="flex gap-2">
               <img src="/img/Github.svg" alt="" />
@@ -61,10 +61,33 @@ const Home = () => {
 
       <div className="flex items-center px-20">
         <span className="text-green text-3xl">#</span>
+        <span className="text-white text-3xl font-medium">skills</span>
+        <span className="border-b border-green ml-4 w-1/5" ></span>
+      </div>
+      <div className="flex gap-x-24 justify-between p-20">
+        <div className="relative flex flex-col justify-center gap-y-3 border-2 border-gray rounded-[20px] px-3 py-40 w-1/3">
+          <div className="absolute top-[-20px] left-1/2 translate-x-[-50%] text-white text-2xl text-medium px-4 bg-brown">Frontend</div>
+          <div className="py-3 text-white text-center font-poppins text-lg font-medium border-[3px] rounded-[10px] border-green">Javascript</div>
+          <div className="py-3 text-white text-center font-poppins text-lg font-medium border-[3px] rounded-[10px] border-green">React</div>
+          <div className="py-3 text-white text-center font-poppins text-lg font-medium border-[3px] rounded-[10px] border-green">Typescript</div>
+        </div>
+        <div className="relative flex flex-col justify-center gap-y-3 border-2 border-gray rounded-[20px] px-3 py-40 w-1/3">
+          <div className="absolute top-[-20px] left-1/2 translate-x-[-50%] text-white text-2xl text-medium px-4 bg-brown">Backend</div>
+          <div className="py-3 text-white text-center font-poppins text-lg font-medium border-[3px] rounded-[10px] border-green">Node JS</div>
+        </div>
+        <div className="relative flex flex-col justify-center gap-y-3 border-2 border-gray rounded-[20px] px-3 py-40 w-1/3">
+          <div className="absolute top-[-20px] left-1/2 translate-x-[-50%] text-white text-2xl text-medium px-4 bg-brown">Tools</div>
+          <div className="py-3 text-white text-center font-poppins text-lg font-medium border-[3px] rounded-[10px] border-green">GitHub</div>
+          <div className="py-3 text-white text-center font-poppins text-lg font-medium border-[3px] rounded-[10px] border-green">Figma</div>
+        </div>
+      </div>
+
+      <div className="flex items-center px-20">
+        <span className="text-green text-3xl">#</span>
         <span className="text-white text-3xl font-medium">contatti</span>
         <span className="border-b border-green ml-4 w-2/4" ></span>
       </div>
-      <div className="relative flex px-20 py-10 items-center justify-between">
+      <div className="relative flex p-20 items-center justify-between">
         <img src="/img/details-1.png" alt="" className="absolute top-1 left-0" />
         <div className="w-2/4">
           <img src="/img/hero.gif" alt="" className="w-full" />
