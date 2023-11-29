@@ -9,7 +9,8 @@ module.exports = {
         'brown' : '#222221',
         'secondary-brown': '#1E1E1E',
         'green': '#00A09A',
-        'gray': '#ABB2BF'
+        'gray': '#ABB2BF',
+        'secondary-gray': '#323232'
       }
     },
     fontFamily: {

@@ -1,6 +1,7 @@
 const Home = () => {
   return (
     <div className="bg-brown min-h-screen">
+      {/* Header */}
       <header className="flex justify-between px-20 py-8 bg-secondary-brown/[0.5]">
         <div className="flex gap-x-1">
           <img src="/img/favicon-jetop-01.svg" alt="" />
@@ -32,15 +33,17 @@ const Home = () => {
         </nav>
       </header>
 
+      {/* Hero */}
       <div className="flex justify-between p-20">
         <div className="w-2/4 flex flex-col justify-between">
           <div className="mt-20">
             <h1 className="font-poppins font-medium">
-            <span className="text-white ">Sono uno </span>
-            <span className="text-green">sviluppatore<br /> full-stack</span>
-          </h1>
+              <span className="text-white ">Sono uno </span>
+              <span className="text-green">sviluppatore<br /> full-stack</span>
+            </h1>
             <p className="font-poppins text-gray mt-8">He crafts responsive websites where<br /> technologies meet creativity</p>
-            <div className="absolute border border-green rounded-lg text-white py-1.5 px-4 mt-10 hover:bg-green hover:text-white transition duration-300 cursor-pointer">Contattami</div></div>
+            <div className="absolute border border-green rounded-lg text-white py-1.5 px-4 mt-10 hover:bg-green transition duration-300 cursor-pointer">Contattami</div>
+          </div>
           <div>
             <div className="flex gap-2">
               <img src="/img/Github.svg" alt="" />
@@ -59,6 +62,7 @@ const Home = () => {
         </div>
       </div>
 
+    {/* Skills */}
       <div className="flex items-center px-20">
         <span className="text-green text-3xl">#</span>
         <span className="text-white text-3xl font-medium">skills</span>
@@ -82,6 +86,80 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Progetti */}
+      <div className="px-20">
+        <div className="flex items-center">
+          <span className="text-green text-3xl">#</span>
+          <span className="text-white text-3xl">progetti</span>
+          <span className="border-b text-green flex-grow ml-4" />
+        </div>
+        <div className="relative mt-20">
+          <img className="w-3/5" src="/img/progetti.png" />
+          <div className='absolute top-1/2 translate-y-[-50%] right-0 left-1/2'>
+            <p className='text-right text-green text-xs'>Featured Project</p>
+            <p className='text-right text-white text-2xl font-bold mt-1'>JETop Theme</p>
+            <div className='text-white bg-secondary-gray text-right text-[15px] p-6 mt-6'>
+              A minimal, dark blue theme for VS Code, <br />
+              Sublime Text, Atom, iTerm, and more. Available <br />
+              on Visual Studio Marketplace, Package Control, <br />
+              Atom Package Manager, and npm.
+            </div>
+            <p className='text-white text-right text-sm mt-4'>TypeScript React Tailwind</p>
+            <div className="flex gap-x-2 justify-end mt-2">
+              <img className="w-9 h-9" src="/img/GitHub.svg" alt="First SVG" />
+              <img className="w-9 h-9" src="/img/external-link.svg" alt="Second SVG" />
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-end relative mt-32 mb-20">
+          <img className="w-3/5" src="/img/progetti.png" />
+          <div className='absolute top-1/2 translate-y-[-50%] right-1/2 left-0'>
+            <p className='text-green text-xs'>Featured Project</p>
+            <p className='text-white text-2xl font-bold font-poppins mt-1'>Nome progetto</p>
+            <div className='text-white font-poppins bg-secondary-gray text-[15px] p-6 mt-6'>
+              A minimal, dark blue theme for VS Code, Sublime <br />
+              Text, Atom, iTerm, and more. Available on Visual <br />
+              Studio Marketplace, Package Control, Atom Package <br />
+              Manager, and npm.
+            </div>
+            <p className='text-white text-sm mt-4'>TypeScript React Tailwind</p>
+            <div className="flex gap-x-2 mt-2">
+              <img className="w-9 h-9" src="/img/GitHub.svg" alt="First SVG" />
+              <img className="w-9 h-9" src="/img/external-link.svg" alt="Second SVG" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* About */}
+      <div>
+        <div className="flex items-center px-20">
+          <span className="text-green text-3xl">#</span>
+          <span className="text-white text-3xl">about</span>
+          <span className="border-b text-green flex-grow ml-4" />
+        </div>
+        <div className="relative flex justify-between p-20">
+          <div className="absolute -left-32 top-10 w-44 h-44 border border-gray"></div>
+          <div className='w-3/5'>
+            <p className='text-gray text-base'>
+              Hello, i’m Elias! <br /> <br />
+              I’m a self-taught front-end developer based in Kyiv,<br />
+              Ukraine. I can develop responsive websites from <br />
+              scratch and raise them into modern user-friendly web <br />
+              experiences. <br /> <br />
+              Transforming my creativity and knowledge into a <br />
+              websites has been my passion for over a year. I have <br />
+              been helping various clients to establish their <br />
+              presence online. I always strive to learn about the <br />
+              newest technologies and frameworks.<br />
+            </p>
+            <div className="absolute border border-green rounded-lg text-white py-1.5 px-4 hover:bg-green transition duration-300 cursor-pointer mt-16">Contattami</div>
+          </div>
+          <img className="object-cover w-1/5" src="/img/about.png" />
+        </div>
+      </div>
+
+      {/* Contatti */}
       <div className="flex items-center px-20">
         <span className="text-green text-3xl">#</span>
         <span className="text-white text-3xl font-medium">contatti</span>
@@ -101,11 +179,12 @@ const Home = () => {
             </div>
             <input type="text" name="" id="" placeholder="Oggetto" />
             <textarea name="" id="" rows="8" placeholder="Testo"></textarea>
-            <button className="text-white border border-green rounded-lg py-1 w-28 hover:bg-green hover:text-white transition duration-300">Invia</button>
+            <button className="text-white border border-green rounded-lg py-1 w-28 hover:bg-green transition duration-300">Invia</button>
           </form>
         </div>
       </div>
 
+      {/* Footer */}
       <footer className="border-t border-gray px-20 py-8">
         <div className="flex justify-between">
           <div className="flex items-center gap-12">
@@ -127,6 +206,8 @@ const Home = () => {
         </div>
         <div className="text-center text-gray mt-10">Designed with &#x2764; by JEToP</div>
       </footer>
+
+
     </div>
   )
 }
